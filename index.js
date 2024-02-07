@@ -14,6 +14,9 @@ const BookModel = require("./models/book.model");
 const Team = require("./models/TeamRegistration");
 // const redis = require('./redis')
 
+import Team from "../Models/TeamRegistration.js";
+
+
 const deleteKeys = async (pattern) => {
   const keys = await redis.keys(`${pattern}::*`)
   console.log(keys)
