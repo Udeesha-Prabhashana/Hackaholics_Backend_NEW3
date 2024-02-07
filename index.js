@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 require("dotenv").config();
-require(" cors")
+const cors = require("cors");
 import cors from "cors";
 
 app.use(express.json());
