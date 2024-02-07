@@ -11,10 +11,10 @@ const connectDB = require("./connectMongo");
 connectDB();
 
 const BookModel = require("./models/book.model");
-const Team = require("./models/TeamRegistration");
+// const Team = require("./models/TeamRegistration");
 // const redis = require('./redis')
 
-import Team from "../Models/TeamRegistration.js";
+import Team from "./models/TeamRegistration";
 
 
 const deleteKeys = async (pattern) => {
