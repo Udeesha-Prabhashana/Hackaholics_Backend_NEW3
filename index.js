@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 
 require("dotenv").config();
+require(" cors")
+import cors from "cors";
 
 app.use(express.json());
 
@@ -15,6 +17,13 @@ const BookModel = require("./models/book.model");
 // const redis = require('./redis')
 
 import Team from "./models/TeamRegistration";
+
+app.use(
+  cors({
+    origin: ORIGIN,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 
 const deleteKeys = async (pattern) => {
