@@ -16,6 +16,7 @@ const BookModel = require("./models/book.model");
 // const redis = require('./redis')
 
 import Team from "./models/TeamRegistration";
+const ORIGIN = process.env.ORIGIN;
 
 app.use(
   cors({
