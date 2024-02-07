@@ -22,6 +22,11 @@ const deleteKeys = async (pattern) => {
   }
 }
 
+app.get("/", (req, res) => {
+  res.send("Hackaholics API is running");
+});
+
+
 app.post("/api/teamregi/register", async (req, res) => {
   try {
     const newSession = new Team({
